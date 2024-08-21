@@ -1,0 +1,17 @@
+c:\Users\disrct\Desktop\WikiCrawler\bin\Debug\net9.0\WikiCrawler.exe
+c:\Users\disrct\Desktop\WikiCrawler\bin\Debug\net9.0\WikiCrawler.deps.json
+c:\Users\disrct\Desktop\WikiCrawler\bin\Debug\net9.0\WikiCrawler.runtimeconfig.json
+c:\Users\disrct\Desktop\WikiCrawler\bin\Debug\net9.0\WikiCrawler.dll
+c:\Users\disrct\Desktop\WikiCrawler\bin\Debug\net9.0\WikiCrawler.pdb
+c:\Users\disrct\Desktop\WikiCrawler\bin\Debug\net9.0\HtmlAgilityPack.dll
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.csproj.AssemblyReference.cache
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.AssemblyInfoInputs.cache
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.AssemblyInfo.cs
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.csproj.CoreCompileInputs.cache
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCraw.35F6C7AB.Up2Date
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.dll
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\refint\WikiCrawler.dll
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.pdb
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.genruntimeconfig.cache
+c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\ref\WikiCrawler.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "w5jbJNSlAb8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\disrct\\Desktop\\WikiCrawler\\WikiCrawler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\disrct\\.nuget\\packages\\htmlagilitypack\\1.11.64\\htmlagilitypack.1.11.64.nupkg.sha512"
+  ],
+  "logs": []
+}
