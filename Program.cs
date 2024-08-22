@@ -146,17 +146,25 @@ public class Program
         var html = new HtmlDocument();
         html.LoadHtml(rawHTML);
 
-        var urls = html.DocumentNode.SelectNodes("//a[@href]")
-            .Select(x => new LinkVertice(new Uri(new Uri(baseUrl), x.Attributes["href"].Value).AbsoluteUri, x.InnerText))
-            .Where(x => !x.Href.StartsWith("#"));
+        var urls = html.DocumentNode.SelectNodes("//*[@id=\"content\"]//a[@href]")
+            .Where(x => x.Attributes["href"].Value.StartsWith("/wiki"))
+            .Select(x => 
+                new LinkVertice(
+                    new Uri(new Uri(baseUrl), x.Attributes["href"].Value)
+                    .AbsoluteUri.Trim(), x.InnerText.Trim()
+                ));
 
         return urls.ToList();
     }
 
     public static async Task Main(string[] args)
     {
-        var startUrl = "https://pt.wikipedia.org/wiki/Guerra_Ir%C3%A3-Iraque";
-        var destinationUrl = "https://pt.wikipedia.org/wiki/Banana";
+        Console.Write("Start: ");
+        var startUrl = Console.ReadLine();
+
+        Console.Write("Destination: ");
+        var destinationUrl = Console.ReadLine();
+
         var startLink = new LinkVertice(startUrl, "Start Page");
         var destinationLink = new LinkVertice(destinationUrl, "Destination Page");
 
@@ -172,13 +180,22 @@ public class Program
         {
             var currentBatch = new List<Task>();
 
-            while (queue.Count > 0 && currentBatch.Count < 10) // Process up to 10 URLs at a time
+            while (queue.Count > 0 && currentBatch.Count < 25) // Process up to 10 URLs at a time
             {
                 var current = queue.Dequeue();
                 currentBatch.Add(Task.Run(async () =>
                 {
-                    var rawHTML = await GetHTMLAsync(current.Href);
-                    var neighbors = GetValues(rawHTML, current.Href);
+
+                    Console.WriteLine($"> {current.Text}");
+
+                    String rawHTML;
+                    try {
+                        rawHTML = (await GetHTMLAsync(current.Href)).Trim();;
+                    } catch {
+                        return;
+                    }
+
+                    var neighbors = GetValues(rawHTML, current.Href.Trim());
 
                     lock (visited)
                     {

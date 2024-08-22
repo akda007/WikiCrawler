@@ -15,3 +15,4 @@ c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\refint\WikiCrawler.dll
 c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.pdb
 c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.genruntimeconfig.cache
 c:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\ref\WikiCrawler.dll
+C:\Users\disrct\Desktop\WikiCrawler\obj\Debug\net9.0\WikiCrawler.sourcelink.json
